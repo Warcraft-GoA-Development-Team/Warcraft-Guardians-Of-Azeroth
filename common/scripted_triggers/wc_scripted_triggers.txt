@@ -999,6 +999,7 @@ is_small_humanoid_trigger = {
 			trait = creature_wolvar
 			trait = creature_vulpera
 			trait = creature_grummle
+			trait = creature_gilblin
 		}
 	}
 }
@@ -1228,6 +1229,10 @@ potential_race_bronze_dragon_trigger = {
 potential_race_goblin_trigger = {
 	graphical_culture = goblingfx
 	NOT = { trait = creature_goblin }
+}
+potential_race_gilblin_trigger = {
+	graphical_culture = gilblingfx
+	NOT = { trait = creature_gilblin }
 }
 potential_race_pygmy_trigger = {
 	graphical_culture = pygmygfx
@@ -1572,6 +1577,7 @@ potential_race_trigger = {
 		potential_race_infinite_dragon_trigger = yes
 
 		potential_race_goblin_trigger = yes
+		potential_race_gilblin_trigger = yes
 		potential_race_pygmy_trigger = yes
 		potential_race_hozen_trigger = yes
 		potential_race_draenei_trigger = yes
@@ -1698,6 +1704,7 @@ has_race_trait_trigger = {
 		trait = creature_black_wyrm
 
 		trait = creature_goblin
+		trait = creature_gilblin
 		trait = creature_pygmy
 		trait = creature_hozen
 		trait = creature_draenei
@@ -1831,6 +1838,7 @@ has_prev_race_trigger = {
 	trigger_else_if = { limit = { is_black_dragon_trigger = yes			} PREV = { is_black_dragon_trigger = yes			} }
 	
 	trigger_else_if = { limit = { trait = creature_goblin 				} PREV = { trait = creature_goblin 				} }
+	trigger_else_if = { limit = { trait = creature_gilblin 				} PREV = { trait = creature_gilblin 				} }
 	trigger_else_if = { limit = { trait = creature_pygmy 				} PREV = { trait = creature_pygmy 					} }
 	trigger_else_if = { limit = { trait = creature_hozen 				} PREV = { trait = creature_hozen 					} }
 	trigger_else_if = { limit = { is_eredar_trigger = yes 				} PREV = { is_eredar_trigger = yes 				} }
@@ -3848,6 +3856,7 @@ is_mammal_trigger = {
 		is_high_elf_trigger = yes
 
 		trait = creature_goblin
+		trait = creature_gilblin
 		trait = creature_pygmy
 		trait = creature_hozen
 		is_eredar_trigger = yes
@@ -4787,6 +4796,7 @@ can_breath_underwater_trigger = {
 		is_uncursed_titanforged_trigger = yes #Don't need to breath
 		trait = creature_gorloc
 		is_plant_race_trigger = yes #Need to "breath", but not often
+		trait = creature_gilblin
 	}
 }
 

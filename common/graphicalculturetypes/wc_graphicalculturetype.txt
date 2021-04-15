@@ -540,7 +540,6 @@ draeneiundeadgfx = {
 stonetolvirgfx = {
 	skin_tone = 0
 }
-
 dwarfundeadgfx = {
 	skin_tone = 0
 }
@@ -557,5 +556,8 @@ darkironfelgfx = {
 	skin_tone = 0
 }
 wildhammerfelgfx = {
+	skin_tone = 0
+}
+gilblingfx = {
 	skin_tone = 0
 }
